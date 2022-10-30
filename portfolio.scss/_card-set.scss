@@ -1,0 +1,62 @@
+
+.container-pages{
+   position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+opacity: 0;
+background-color: #2196F3;
+}
+.title:hover .container-pages{
+    opacity: 1;
+}
+.pages{
+    width: 370px;
+height: 294px;
+}
+.card-set{
+   display: flex;
+   /* Make a flex container multiline */
+   flex-wrap: wrap;
+   /* Set gap between rows and columns */
+   gap: 10px;
+}
+.title>h2{margin-top: 20px;
+   margin-left: 24px;
+}
+.title>p{
+   margin-top: 4px;
+   margin-left: 24px;
+}
+.title{
+    overflow: hidden;
+   position: relative;
+      flex-basis: calc((100% - 20px) / 3);
+      background-color: #FFFFFF;
+      width: 370px;
+height: 420px;
+ margin-bottom: 30px;
+  border: 1px solid #EEEEEE;    
+   }
+     .footer {
+   padding-bottom: 60px;
+    background: #2F303A;
+}
+.container{
+   box-sizing: border-box;
+margin-top: 50px;
+
+}  .text-hover{
+    position: absolute;
+width: 322px;
+height: 168px;
+left: 24px;
+top: 63px;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+letter-spacing: 0.03em;
+color: #FFFFFF;
+  }
