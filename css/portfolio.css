@@ -1,0 +1,428 @@
+body {
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-page {
+  color: #000000;
+  font-family: "Raleway";
+  margin-right: 93px;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.web {
+  color: #2196F3;
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.list-links {
+  list-style: none;
+  display: flex;
+}
+
+.links {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  position: relative;
+}
+
+.links::after {
+  content: "";
+  background-color: #2196F3;
+  width: 100%;
+  height: 4px;
+  display: block;
+  position: absolute;
+  top: 32px;
+  opacity: 0;
+}
+
+.links:hover::after {
+  opacity: 1;
+}
+
+.list-link {
+  margin-right: 54px;
+}
+
+.list-link:last-child {
+  margin-right: 0px;
+}
+
+.links:hover {
+  color: #2196F3;
+}
+
+.list-contacts {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.contacts:hover {
+  color: #2196F3;
+}
+
+.icom-heder-mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+a[href="mailto:info@devstudio.com"] {
+  padding-top: 32px;
+}
+
+.icom-heder-tel {
+  margin-left: 32px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+a[href="tel:+380961111111"] {
+  padding-top: 32px;
+}
+
+.icon {
+  left: 65.75%;
+  right: 33.25%;
+  width: 50px;
+  height: 50px;
+  bottom: 98.43%;
+}
+
+.menu-btn:hover {
+  color: #FFFFFF;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu > .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.item {
+  color: #212121;
+  background-color: #F5F4FA;
+  margin-top: 100px;
+}
+
+.item:hover {
+  background-color: #2196F3;
+}
+
+button:hover {
+  background-color: #2196F3;
+}
+
+button {
+  border: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.menu-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.menu-btn:hover {
+  color: #FFFFFF;
+}
+
+.container-pages {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: #2196F3;
+}
+
+.title:hover .container-pages {
+  opacity: 1;
+}
+
+.pages {
+  width: 370px;
+  height: 294px;
+}
+
+.card-set {
+  display: flex;
+  /* Make a flex container multiline */
+  flex-wrap: wrap;
+  /* Set gap between rows and columns */
+  gap: 10px;
+}
+
+.title > h2 {
+  margin-top: 20px;
+  margin-left: 24px;
+}
+
+.title > p {
+  margin-top: 4px;
+  margin-left: 24px;
+}
+
+.title {
+  overflow: hidden;
+  position: relative;
+  flex-basis: calc((100% - 20px) / 3);
+  background-color: #FFFFFF;
+  width: 370px;
+  height: 420px;
+  margin-bottom: 30px;
+  border: 1px solid #EEEEEE;
+}
+
+.footer {
+  padding-bottom: 60px;
+  background: #2F303A;
+}
+
+.container {
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.text-hover {
+  position: absolute;
+  width: 322px;
+  height: 168px;
+  left: 24px;
+  top: 63px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.footer {
+  padding-bottom: 60px;
+  background: #2F303A;
+  display: flex;
+}
+
+footer .container {
+  display: flex;
+}
+
+.logo-footer {
+  padding-top: 60px;
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #2196F3;
+}
+
+.list-mailing {
+  display: flex;
+}
+
+.footer-mailing {
+  padding-left: 100px;
+  padding-top: 75px;
+}
+
+.mailing-text {
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+}
+
+.footer-btn {
+  width: 200px;
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  line-height: 1.9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: block;
+  background: #2196F3;
+  border-radius: 4px;
+  position: relative;
+}
+
+.svg-mailing {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  fill: #FFFFFF;
+  /* margin-top: 12px; */
+}
+
+.footer-social {
+  padding-top: 72px;
+  padding-left: 70px;
+}
+
+.logo-word {
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: rgb(255, 255, 255);
+}
+
+.footer-input {
+  padding-left: 12px;
+  margin-right: 12px;
+  width: 450px;
+  height: 50px;
+  background: #2F303A;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.place {
+  font-style: normal;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0, 3em;
+  color: #FFFFFF;
+}
+
+.email-footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tel-footer {
+  /* margin-top: 9px; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.list-footer {
+  list-style: none;
+}
+
+.Join-in {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.list-footer {
+  display: flex;
+}
+
+.svg-social-networks-footer {
+  fill: #FFFFFF;
+  background-color: 100% solid #757575;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.svg-social-networks-footer:hover {
+  fill: #FFFFFF;
+  background-color: #2196F3;
+  border-radius: 100%;
+}
+
+.social-item:last-child {
+  margin-right: 0px;
+}
+
+.list-item-footer {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-btn:hover {
+  background-color: purple;
+}
+
+.footer-btn:active {
+  top: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+h2, h1, h3 {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=portfolio.css.map */
