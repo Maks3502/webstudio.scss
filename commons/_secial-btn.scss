@@ -15,8 +15,8 @@ justify-content: center
    background-color: #F5F4FA;
    margin-top: 100px;
 }
-.item:hover{ background-color: #2196F3;}
-button:hover{background-color: #2196F3;}
+.item:hover{ background-color: $akcent-color;}
+button:hover{background-color: $akcent-color;}
 button{
    border: none;
    padding-top: 6px;

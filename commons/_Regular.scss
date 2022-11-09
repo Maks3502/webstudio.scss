@@ -17,8 +17,8 @@ border: 1px solid grey;
 border-radius: 4px;
 }
 .container-Reguler:hover{
-fill: #2196F3;
-border: 1px solid #2196F3;
+fill: $akcent-color;
+border: 1px solid $akcent-color;
 border-radius: 4px;
 }
 .container-Reguler:last-child{
@@ -34,11 +34,11 @@ border-radius: 4px;
    width: 70px;
 }
 .container-Reguler:hover{
-    fill: #2196F3;
+    fill: $akcent-color;
 }
 
 .svg-pages:hover{
-    fill: #2196F3;
+    fill: $akcent-color;
     
 }
 .taemes{

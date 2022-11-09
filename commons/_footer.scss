@@ -15,7 +15,7 @@ footer .container{
     line-height: 1.2;
     letter-spacing: 0.03em;
 
-    color: #2196F3;
+    color: $akcent-color;
 }
 .list-mailing{
     display: flex;
@@ -41,7 +41,7 @@ height: 50px;
     line-height: 1.9;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     display: block;
-    background: #2196F3;
+    background: $akcent-color;
     border-radius: 4px;
     position: relative;
 }
@@ -130,7 +130,7 @@ margin-right: 10px;
 }
 .svg-social-networks-footer:hover{
     fill: #FFFFFF;
-    background-color: #2196F3;
+    background-color: $akcent-color;
     border-radius: 100%;
 }
 
