@@ -1,0 +1,88 @@
+.what-do-we-do{
+    
+    padding-bottom:94px ;
+    padding-left: auto;
+    padding-right: auto;
+
+    @media screen and (min-width:480px) {
+display: none;
+
+    
+}
+@media screen and (min-width:768px) {
+
+    
+}
+@media screen and (min-width:1200px) {
+
+}}
+.work-title {
+    padding-top: 94px;
+    
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.work-list {
+    list-style: none;
+    padding: 0px;
+
+    @media screen and (min-width:480px) {
+
+
+    
+}
+@media screen and (min-width:768px) {
+  
+    
+}
+@media screen and (min-width:1200px) {
+   display: flex;
+}
+}
+.item-work{
+    margin-right: 30px;
+    padding-bottom: 200px;
+}
+.item-work:last-child{
+    margin-right: 0px;
+}
+.team-do{
+    padding-top: 27px;
+    padding-left: 100px;
+    position: absolute;
+    font-weight: 700;
+font-size: 14px;
+text-align: center;
+line-height: 16px;
+color: red;
+
+}
+.decision{
+    position: relative;
+    height:70px ;
+    width:370px ;
+    background: rgba(47, 48, 58, 0.8);
+    top: 224px;
+}
+.pages{
+    width: 370px;
+    height: 294px;
+    position: absolute;
+}
+.social-link{
+    width: 44px;
+    height: 44px;
+fill: #AFB1B8;
+align-items: center;
+justify-content: center
+;
+display: flex;
+}
