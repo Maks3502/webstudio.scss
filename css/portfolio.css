@@ -6,15 +6,44 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 header {
   display: flex;
   align-items: center;
   height: 80px;
+}
+@media screen and (min-width: 480px) {
+  header {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    width: 1600px;
+  }
 }
 
 nav {
@@ -43,7 +72,16 @@ nav {
   list-style: none;
   display: flex;
 }
-
+@media screen and (min-width: 480px) {
+  .list-links {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list-links {
+    display: flex;
+  }
+}
 .links {
   color: #212121;
   font-weight: 500;
@@ -82,8 +120,23 @@ nav {
 
 .list-contacts {
   list-style: none;
-  display: flex;
-  margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .list-contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list-contacts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-contacts {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contacts {
@@ -106,6 +159,16 @@ nav {
 a[href="mailto:info@devstudio.com"] {
   padding-top: 32px;
 }
+@media screen and (min-width: 768px) {
+  a[href="mailto:info@devstudio.com"] {
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  a[href="mailto:info@devstudio.com"] {
+    margin-left: 0px;
+  }
+}
 
 .icom-heder-tel {
   margin-left: 32px;
@@ -115,6 +178,16 @@ a[href="mailto:info@devstudio.com"] {
 
 a[href="tel:+380961111111"] {
   padding-top: 32px;
+}
+@media screen and (min-width: 768px) {
+  a[href="tel:+380961111111"] {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  a[href="tel:+380961111111"] {
+    margin-left: 0px;
+  }
 }
 
 .icon {
@@ -251,9 +324,33 @@ button {
   background: #2F303A;
   display: flex;
 }
+@media screen and (min-width: 480px) {
+  .footer {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 1600px;
+  }
+}
 
-footer .container {
-  display: flex;
+@media screen and (min-width: 768px) {
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer .container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .logo-footer {
@@ -265,13 +362,24 @@ footer .container {
   color: #2196F3;
 }
 
-.list-mailing {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .list-mailing {
+    display: flex;
+  }
 }
 
 .footer-mailing {
-  padding-left: 100px;
   padding-top: 75px;
+}
+@media screen and (min-width: 768px) {
+  .footer-mailing {
+    padding-left: 166px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-mailing {
+    padding-left: 100px;
+  }
 }
 
 .mailing-text {
@@ -407,6 +515,17 @@ footer .container {
 .footer-btn:active {
   top: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 480px) {
+  .link-mailing {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .link-mailing {
+    margin-bottom: 0px;
+  }
 }
 
 h2, h1, h3 {
