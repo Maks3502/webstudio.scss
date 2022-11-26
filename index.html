@@ -18,16 +18,24 @@
   <!-- Шапка -->
   <header>
     <div class="container">
-   <nav >
+   <nav>
         <a href="/" class="main-page"><span class="web">Web</span>Studio</a>
-        
-            <ul class="list-links">
-              
-                <li class="list-link"><a href="./index.html" class="links after-pages">Студія</a></li>
+        <button data-menu-button  type="button"  class="btn-header"><svg class="heder_icon"><use class="open_heder" href="./images/symbol-defs.svg#heder_btn"></use>
+       <use class="close_header" href="./images/symbol-defs.svg#closde-heder"></use></svg></button>
+          
+            <ul data-menu class="list-links">
+                <li class="list-link"><a href="./index.html" class="links">Студія</a></li>
+                <li class="list-link"><a href="portfolio.html" class="links">Портфоліо</a></li>
+                <li class="list-link"><a href="/contacts" class="links">Контакти</a></li>
+            </ul>  
+          
+
+
+        <ul  class="list-heder">
+                <li class="list-link"><a href="./index.html" class="links">Студія</a></li>
                 <li class="list-link"><a href="portfolio.html" class="links">Портфоліо</a></li>
                 <li class="list-link"><a href="/contacts" class="links">Контакти</a></li>
             </ul>
-        
         
             <ul class="list-contacts">
               
@@ -271,7 +279,7 @@
  
 <section class="Regular-section">
   <div class="container">
-    <h2 class="Regular-customers">Постійні Кліенти</h2>
+    <h2 class="Regular-customers">Постійні клієнти</h2>
     <ul class="taemes">
       <li class="container-Reguler"><svg class="svg-pages"><use href="./images/symbol-defs.svg#ya s go"></use></svg> </li>
       <li class="container-Reguler"><svg class="svg-pages"><use href="./images/symbol-defs.svg#book"></use></svg> </li>
@@ -298,7 +306,7 @@
 
     <div class="footer-social">
     <h2 class="Join-in">Приєднуйтесь</h2>
-<ul class="list-footer"><li class="list-item-footer">
+<ul class="list-footer-social"><li class="list-item-footer">
               <a class="social-link">
 <svg class="svg-social-networks"><use href="./images/symbol-defs.svg#instagram"></use></svg>
               </a>
@@ -328,28 +336,12 @@
      </ul>
     </div>
     </div>
-<script>
-      const refs = {
-        openModalBtn: document.querySelector("[data-open-modal]"),
-        closeModalBtn: document.querySelector("[data-close-modal]"),
-        backdrop: document.querySelector("[data-backdrop]"),
-      };
 
-      refs.openModalBtn.addEventListener("click", toggleModal);
-      refs.closeModalBtn.addEventListener("click", toggleModal);
-
-      refs.backdrop.addEventListener("click", logBackdropClick);
-
-      function toggleModal() {
-        refs.backdrop.classList.toggle("is-hidden");
-      }
-
-      function logBackdropClick() {
-        console.log("Це клік в бекдроп");
-      }
-    </script>
-        
   </footer>
+<script src="./js/script.js">
+
+</script>
+  
 </body>
 
 </html>
