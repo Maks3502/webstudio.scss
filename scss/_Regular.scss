@@ -29,6 +29,20 @@ margin-right: 30px;
     
 }
 }
+.container-Reguler:nth-child(2n){
+  @media screen and (min-width:480px) {
+margin-right: 0px;
+    
+}
+@media screen and (min-width:768px) {
+margin-right: 30px;
+    
+}
+@media screen and (min-width:1200px) {
+   margin-right: 30px;
+    
+}   
+}
 .container-Reguler:hover{
 fill: $akcent-color;
 border: 1px solid $akcent-color;
@@ -60,12 +74,13 @@ border-radius: 4px;
     padding: 0px;
     
      @media screen and (min-width:480px) {
+display: flex;
 flex-wrap: wrap;
 
     
 }
 @media screen and (min-width:768px) {
- display: flex;
+ 
     
 }
 @media screen and (min-width:1200px) {
