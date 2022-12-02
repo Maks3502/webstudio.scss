@@ -2,11 +2,11 @@ header{
     display: flex;
     align-items: center;
     height: 80px;
-    position: relative;
+    
 
      @media screen and (min-width:480px) {
 width: 480px;
-
+position: relative;
     
 }
 @media screen and (min-width:768px) {
@@ -68,8 +68,8 @@ margin-right: 93px;
     position: absolute; 
     top: 100%; 
     left: 0; 
-    width: 100%; 
-    height: 100vh; 
+   width: 480px;
+height: 400px; 
     display: none; 
     background-color: #fff;  
 
@@ -159,7 +159,7 @@ display: flex;
     
 
     @media screen and (min-width:480px) {
-margin-top:35px ;
+margin-top:25px;
 
     
 }
@@ -263,13 +263,13 @@ height: 50px;
 bottom: 98.43%;
 }
 .btn-header{
-border: none;
-display: block;
-margin-left: auto;
+
 
 
          @media screen and (min-width:480px) {
-
+border: none;
+display: block;
+margin-left: auto;
 
     
 }
@@ -306,8 +306,22 @@ display: block;
         height: 32px;
         width: 32px;
     }
-.link-heder{
-    margin-top: 100px;
+   .icom-heder-telefon{fill: currentColor}
+   .link-heder-telefon{
+    margin-top: 62px;
+margin-bottom: 22px;
 }
+.telefon-icon{
+    font-weight: 500;
+font-size: 34px;
+line-height: 40px;
+/* identical to box height */
+letter-spacing: 0.02em;
+color: #757575;
+}
+.telefon-icon:hover{
+    color:$akcent-color ;
+}
+   
     
     

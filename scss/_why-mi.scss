@@ -144,28 +144,28 @@ border-radius: 4px;
 } 
 
 .about-item:nth-child(1)::before{
-    content: url(../../images/Vector.png);
+    content: url(../.././images/Vector.png);
     display: block;
     padding-bottom: 25px;
     text-align: center;
     padding-top: 25px;
 }
 .about-item:nth-child(2)::before{
-    content: url(../../images/Vector\ \(1\).png);
+    content: url(../.././images/Vector\ \(1\).png);
     display: block;
     padding-bottom: 25px;
     text-align: center;
     padding-top: 25px;
 }
 .about-item:nth-child(3)::before{
-    content: url(../../images/Vector\ \(2\).png);
+    content: url(../.././images/Vector\ \(2\).png);
      display: block;
     padding-bottom: 33px;
     text-align: center;
     padding-top: 33px;
 }
 .about-item:nth-child(4)::before{
-    content: url(../../images/astronaut\ 1.png);
+    content: url(../.././images/astronaut\ 1.png);
  display: block;
     padding-bottom: 25px;
     text-align: center;

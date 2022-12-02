@@ -16,11 +16,22 @@ background-color: $akcent-color;
 height: 294px;
 }
 .card-set{
-   display: flex;
    /* Make a flex container multiline */
-   flex-wrap: wrap;
    /* Set gap between rows and columns */
    gap: 10px;
+
+
+       @media screen and (min-width:480px) {
+
+   
+}
+@media screen and (min-width:768px) {
+flex-wrap: wrap;
+display: flex;
+}
+@media screen and (min-width:1200px) {
+   
+}
 }
 .title>h2{margin-top: 20px;
    margin-left: 24px;
