@@ -1,327 +1,241 @@
-header{
-    display: flex;
-    align-items: center;
-    height: 80px;
-    
-
-     @media screen and (min-width:480px) {
-width: 480px;
-position: relative;
-    
+header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  position: relative;
 }
-@media screen and (min-width:768px) {
- width: 768px;
-    
-}
-@media screen and (min-width:1200px) {
-   width: 1600px;
-    
-}
-}
- 
 
 nav {
-    
-
-         @media screen and (min-width:480px) {
-
-display: flex;
-    
-    
-}
-@media screen and (min-width:768px) {
- 
-    
-}
-@media screen and (min-width:1200px) {
-   
-    
-}
+  display: flex;
 }
 
 .main-page {
-    color: #000000;
-    font-family: 'Raleway';
-margin-right: 93px;
+  color: #000000;
+  font-family: "Raleway";
 
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 93px;
+    width: 133.12px;
+height: 17.76px;
+  }
+
+
 }
 
 .web {
-    color: $akcent-color;
-    font-family: 'Raleway';
-
-
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+  color: $akcent-color;
 }
 
 .list-links {
-    
-
-      @media screen and (min-width:480px) {
-    display: flex; 
-    gap: 20px; 
-    position: absolute; 
-    top: 100%; 
-    left: 0; 
-   width: 480px;
-height: 400px; 
-    display: none; 
-    background-color: #fff;  
-
-    
-}
-@media screen and (min-width:768px) {
- display: none;
-    
-}
-@media screen and (min-width:1200px) {
-   
-    
-}
+  gap: 20px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 480px;
+  height: 400px;
+  display: none;
+  background-color: #fff;
+ 
 }
 
 .links {
-   
-    
-    @media screen and (min-width:480px) {
-font-weight: 500;
-font-size: 40px;
-line-height: 47px;
-text-align: center;
-letter-spacing: 0.02em;
-color: #212121;
-
-    
-}
-@media screen and (min-width:768px) {
- color: #212121;
-    font-weight: 500;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+  @media screen and (min-width: 768px) {
     font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em; 
     position: relative;
-    
-    
+  }
 }
-@media screen and (min-width:1200px) {
-   
-    
+.links::after {
+  content: "";
+  background-color: $akcent-color;
+  width: 100%;
+  height: 4px;
+  display: block;
+  position: absolute;
+  top: 32px;
+  opacity: 0;
 }
+.links:hover::after {
+  opacity: 1;
+}
+.list-heder {
+  display: none;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
-.links::after{
-    content: "";
-    background-color: $akcent-color;
-    width: 100%;
-    height: 4px;
-    display: block;
-    position: absolute;
-    top: 32px;
-opacity: 0;
+.list-link {
+  margin-top: 25px;
 
-     @media screen and (min-width:480px) {
-display: none;
-
-    
-}
-@media screen and (min-width:768px) {
- display: block;
-    
-}
-@media screen and (min-width:1200px) {
-   
-    
-}
-}
-.links:hover::after{
-    opacity: 1;
-}
-.list-heder{
-    @media screen and (min-width:480px) {
-display: none;
-
-    
-}
-@media screen and (min-width:768px) {
-display: flex;
-}
-@media screen and (min-width:1200px) {
-   
-    
-}
-}
-.list-link{
-    
-
-    @media screen and (min-width:480px) {
-margin-top:25px;
-
-    
-}
-@media screen and (min-width:768px) {
-margin-right: 54px;
+  @media screen and (min-width: 768px) {
+    margin-right: 54px;
     margin-top: 0px;
+  }
+ 
 }
-@media screen and (min-width:1200px) {
-   
-    
-}
-    
-}
-.list-link:last-child{
-margin-right: 0px;
+.list-link:last-child {
+  margin-right: 0px;
 }
 
-.links:hover{color: $akcent-color;}
+.links:hover {
+  color: $akcent-color;
+}
 
 .list-contacts {
-    list-style: none;
-    
-         @media screen and (min-width:480px) {
-display: none;
+  list-style: none;
+  display: none;
 
-    
-}
-@media screen and (min-width:768px) {
- display: flex;
- flex-wrap: wrap;
-    
-}
-@media screen and (min-width:1200px) {
-   display: flex;
-   margin-left: auto;
-    
-}
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contacts {
-    color: #212121;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
-.contacts:hover{
-    color:$akcent-color ;}
+.contacts:hover {
+  color: $akcent-color;
+}
 
-
-.icom-heder-mail{
-    margin-right: 10px;
-    fill: currentColor;
+.icom-heder-mail {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 a[href="mailto:info@devstudio.com"] {
-    padding-top: 32px;
+  padding-top: 32px;
 
-         @media screen and (min-width:480px) {
-
-
-    
+  @media screen and (min-width: 768px) {
+    margin-left: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+  }
 }
-@media screen and (min-width:768px) {
-margin-left: 50px;
-    
-}
-@media screen and (min-width:1200px) {
-   margin-left: 0px;
-    
-}
-}
-.icom-heder-tel{
-    margin-left: 32px;
-    margin-right: 10px;
-    fill: currentColor;
+.icom-heder-tel {
+  margin-left: 32px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 a[href="tel:+380961111111"] {
-    
-    padding-top: 32px;
+  padding-top: 32px;
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+  }
+}
+.icon {
+  left: 65.75%;
+  right: 33.25%;
+  width: 50px;
+  height: 50px;
+  bottom: 98.43%;
+}
+.btn-header {
+  border: none;
+  display: block;
+  margin-left: auto;
+  background-color: transparent;
 
-         @media screen and (min-width:480px) {
-
-
-    
-}
-@media screen and (min-width:768px) {
- margin-left: 20px;
-    
-}
-@media screen and (min-width:1200px) {
-   margin-left: 0px;
-    
-}
-}
-.icon{
-    left: 65.75%;
-right: 33.25%;
-width: 50px;
-height: 50px;
-bottom: 98.43%;
-}
-.btn-header{
-
-
-
-         @media screen and (min-width:480px) {
-border: none;
-display: block;
-margin-left: auto;
-
-    
-}
-@media screen and (min-width:768px) {
- display: none;
-    
-}
-@media screen and (min-width:1200px) {
-   display: none;
-    
-}
-}
-.btn-header .heder_icon{
-      width: 40px;
-height: 40px;
-fill: #000000;
-}
-.btn-header .close_header{
-display: none;
-}
-.btn-header .open_heder{
-display: block;
-}
-.btn-header.is-open .heder_icon{
-    display: block;
-}
-.btn-header.is-open .open_heder{
+  @media screen and (min-width: 768px) {
     display: none;
+  }
+}
+.btn-header .heder_icon {
+  width: 40px;
+  height: 40px;
+  fill: #000000;
+}
+.btn-header .close_header {
+  display: none;
+}
+.btn-header .open_heder {
+  display: block;
+}
+.btn-header.is-open .heder_icon {
+  display: block;
+}
+.btn-header.is-open .open_heder {
+  display: none;
 }
 .list-links.is-open {
-    display:block;}
+  display: block;
+}
 
-    .close_header{
-        height: 32px;
-        width: 32px;
-    }
-   .icom-heder-telefon{fill: currentColor}
-   .link-heder-telefon{
-    margin-top: 62px;
-margin-bottom: 22px;
+.close_header {
+  height: 32px;
+  width: 32px;
 }
-.telefon-icon{
-    font-weight: 500;
-font-size: 34px;
-line-height: 40px;
-/* identical to box height */
-letter-spacing: 0.02em;
-color: #757575;
+.icom-heder-telefon {
+  fill: currentColor;
 }
-.telefon-icon:hover{
-    color:$akcent-color ;
+.link-heder-telefon {
+  margin-top: 62px;
+  margin-bottom: 22px;
 }
-   
-    
-    
+.telefon-icon {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.telefon-icon:hover {
+  color: $akcent-color;
+}
+.socil-link-heder {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+.list-social-heder {
+  display: flex;
+  padding-top: 20px;
+}
+.social-heder {
+  margin-right: 20px;
+}
+.social-heder:last-child {
+  margin-right: 0px;
+}
+.mobile-modal {
+ width: 100%;
+ display: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    &.is-open {
+    display: block;
+}
+  }
+}
