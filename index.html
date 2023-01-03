@@ -17,7 +17,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
@@ -111,7 +111,7 @@
           </ul>
 
           <ul class="list-contacts">
-            <li>
+            <li class="link-contacts">
               <a href="mailto:info@devstudio.com" class="contacts"
                 ><svg
                   class="icom-heder-mail"
@@ -125,7 +125,7 @@
               >
             </li>
 
-            <li>
+            <li class="link-contacts">
               <a href="tel:+380961111111" class="contacts"
                 ><svg
                   class="icom-heder-tel"
@@ -147,7 +147,7 @@
       <!-- Секція-герой -->
       <section class="hero-section">
         <h1 class="hero-title">
-          еФЕКтивні рішення для <br />
+          еФЕКтивні рішення для <br/>
           вашого бізнесу
         </h1>
         <button data-open-modal type="button" class="hero-btn">
@@ -155,7 +155,7 @@
         </button>
       </section>
       <div class="backdrop is-hidden" data-backdrop>
-        <div class="modall">
+        <form class="modall">
           <ul>
             <li class="list-closde">
               <button class="closde-btn" data-close-modal>
@@ -178,6 +178,7 @@
                 class="input-1"
                 name="people"
                 placeholder="Ведите Name"
+                required
               />
             </li>
             <li class="list-tel">
@@ -190,6 +191,8 @@
                 class="input-1"
                 name="Telephone"
                 placeholder="Ведите Telephone"
+                required
+
               />
             </li>
             <li class="list-mail">
@@ -202,6 +205,7 @@
                 class="input-1"
                 name="Mail"
                 placeholder="Ведите Mail"
+                required
               />
             </li>
             <li class="write-tex">
@@ -223,7 +227,7 @@
             </li>
           </ul>
           <button class="main-btn">Надіслати</button>
-        </div>
+        </form>
       </div>
 
       <!-- Чому ми? -->
@@ -268,20 +272,20 @@
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="work-list">
             <li class="item-work">
-              <img class="pages" src="./images/035.jpg" alt="035" />
+              <img class="pages" src="./images/ДЕСКТОПНІ ЗАСТОСУНКИ.png" alt="035" />
               <div class="decision">
                 <p class="team-do">ДЕСКТОПНІ ЗАСТОСУНКИ</p>
               </div>
             </li>
 
             <li class="item-work">
-              <img class="pages" src="./images/1234.jpg" alt="1234" />
+              <img class="pages" src="./images/МОБІЛЬНІ ЗАСТОСУНКИ.png" alt="1234" />
               <div class="decision">
                 <p class="team-do">МОБІЛЬНІ ЗАСТОСУНКИ</p>
               </div>
             </li>
             <li class="item-work">
-              <img class="pages" src="./images/12345.jpg" alt="12345" />
+              <img class="pages" src="./images/ДИЗАЙНЕРСЬКІ РІШЕННЯ.png" alt="12345" />
               <div class="decision">
                 <p class="team-do">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
               </div>
@@ -296,7 +300,12 @@
           <h2 class="our-team">Наша команда</h2>
           <ul class="team">
             <li class="team-item">
-              <img class="our-pages" src="./images/028.jpg" alt="028" />
+              <picture>
+                 <source srcset="./images/imgigormobile.1x.png 1x, ./images/imgigormobile.2x.png 2x" media="(max-width: 768px)">
+              <source srcset="./images/imgigortablet.1x.png 1x, ./images/imgigortablet.2x.png 2x" media="(min-width: 768px)">
+              <source srcset="./images/imgigordesck.1x.png 1x, ./images/imgigordesck.2x.png 2x" media="(min-width: 1200px)">
+              <img class="our-pages" src="./images/imgigordesck.1x.png" alt="028" />
+              </picture>
               <h3 class="team-name">Ігорь Демянов</h3>
               <p class="team-profesion">Product Designer</p>
               <ul class="social-list">
@@ -331,7 +340,12 @@
               </ul>
             </li>
             <li class="team-item">
-              <img class="our-pages" src="./images/901.jpg" alt="901" />
+              <picture>
+               <source srcset="./images/imgmobile-olga.1x.jpg 1x, ./images/imgmobile-olga.2x.jpg 2x" media="(max-width: 768px)">
+              <source srcset="./images/imgtablet=olga.1x.jpg 1x, ./images/imgtablet=olga.2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/imgdesc-olga.1x.jpg 1x, ./images/imgdesc-olga.2x.png 2x" media="(min-width: 1200px)">
+              <img class="our-pages" src="./images/imgdesc-olga.1x.jpg" alt="901" />
+              </picture>
               <h3 class="team-name">Ольга Репіна</h3>
               <p class="team-profesion">Frontend Developer</p>
               <ul class="social-list">
@@ -366,7 +380,12 @@
               </ul>
             </li>
             <li class="team-item">
-              <img class="our-pages" src="./images/902.jpg" alt="902" />
+            <picture>
+              <source srcset="./images/imgmobile-Mikola.1x.jpg 1x, ./images/imgmobile-Mikola.2x.jpg 2x" media="(max-width: 768px)">
+              <source srcset="./images/imgtablet-mikola.1x.jpg 1x, ./images/imgtablet-mikola.2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/imgdasc-mikola.1x.jpg 1x, ./images/imgdasc-mikola.2x.jpg 2x" media="(min-width: 1200px)">
+              <img class="our-pages" src="./images/imgdasc-mikola.1x.jpgg" alt="902" />
+            </picture>
               <h3 class="team-name">Микола Тарасов</h3>
               <p class="team-profesion">Marketing</p>
               <ul class="social-list">
@@ -401,7 +420,12 @@
               </ul>
             </li>
             <li class="team-item">
-              <img class="our-pages" src="./images/309.jpg" alt="903" />
+              <picture>
+              <source srcset="./images/imgmobile-Mihaylo.1x.jpg 1x, ./images/imgmobile-Mikola.2x.jpg 2x" media="(max-width: 768px)">
+            <source srcset="./images/imgtablet-Mihaylo.1x.jpg 1x, ./images/imgtablet-Mihaylo.2x.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./images/imgdasc-Mihaylo.1x.jpg 1x, ./images/imgdasc-Mihaylo.2x.jpg 2x" media="(min-width: 1200px)">
+              <img class="our-pages" src="./images/imgdasc-Mihaylo.1x.jpg" alt="903" />
+            </picture>
               <h3 class="team-name">Михайло Єрмаков</h3>
               <p class="team-profesion">UI Designer</p>
               <ul class="social-list">
