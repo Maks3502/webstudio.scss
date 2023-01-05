@@ -104,6 +104,18 @@ height: 17.76px;
     margin-left: auto;
   }
 }
+.link-contacts{
+ padding-left: 50px;
+
+  @media screen and (min-width: 768px) {
+    padding:0px ;
+
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-left: 0px;
+  }
+}
 
 .contacts {
   color: #212121;
@@ -121,16 +133,6 @@ height: 17.76px;
   fill: currentColor;
 }
 
-a[href="mailto:info@devstudio.com"] {
-  padding-top: 32px;
-
-  @media screen and (min-width: 768px) {
-    margin-left: 50px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-left: 0px;
-  }
-}
 .icom-heder-tel {
   margin-left: 32px;
   margin-right: 10px;
@@ -227,9 +229,9 @@ a[href="tel:+380961111111"] {
 }
 .mobile-modal {
  width: 100%;
- display: none;
+ display:none ;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     display: none;
     position: absolute;
     top: 100%;
