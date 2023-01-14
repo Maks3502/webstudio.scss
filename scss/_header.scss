@@ -112,7 +112,7 @@ height: 17.76px;
 
   }
   @media screen and (min-width: 1200px) {
-    padding-top: 32px;
+    padding-top: 15px;
     padding-left: 0px;
   }
 }
@@ -128,15 +128,23 @@ height: 17.76px;
   color: $akcent-color;
 }
 
-.icom-heder-mail {
+.icom-heder-mail { 
+  margin-left: 0px;
   margin-right: 10px;
   fill: currentColor;
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+  }
 }
 
 .icom-heder-tel {
   margin-left: 32px;
   margin-right: 10px;
   fill: currentColor;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 15px;
+  }
 }
 a[href="tel:+380961111111"] {
   padding-top: 32px;
